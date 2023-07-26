@@ -20,22 +20,6 @@
     .hr-ash {
       border-color: #ccc;
     }
-    .team-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      height: 100%;
-    }
-
-    .team-content h3 {
-      margin-bottom: 10px;
-    }
-
-    .team-content p {
-      margin: 0;
-    }
   </style>
   <script src="https://kit.fontawesome.com/d8d56fda0e.js" crossorigin="anonymous"></script>
   <title>Fruits Website</title>
@@ -60,7 +44,6 @@
         </div>
       </div>
 
-      <!-- Full Desktop Navbar -->
       <div class="hidden lg:flex justify-center items-center space-x-8 mt-6 px-8"
         style="max-width: 1440px; margin-top: 40px auto;">
         <div
@@ -85,7 +68,7 @@
         </div>
       </div>
 
-      <!-- Mobile Navigation Menu (Dropdown) -->
+      
       <div class="lg:hidden" x-show="open" x-on:click.away="open = false">
         <div class="px-4 py-2 space-y-4 mt-4">
           <a href="#" class="block text-[#000] hover:bg-gray-700 px-3 py-2 rounded-md">Home</a>
@@ -259,7 +242,6 @@
                     <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
                   </div>
                   <div class="modal-action justify-center">
-                    <!-- if there is a button in form, it will close the modal -->
                     <button class="btn bg-[#F85559] text-white">Close</button>
                     <button class="btn bg-[#F85559] text-white">Buy Now</button>
                   </div>
@@ -299,7 +281,6 @@
                     <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
                   </div>
                   <div class="modal-action justify-center">
-                    <!-- if there is a button in form, it will close the modal -->
                     <button class="btn bg-[#F85559] text-white">Close</button>
                     <button class="btn bg-[#F85559] text-white">Buy Now</button>
                   </div>
@@ -339,7 +320,6 @@
                     <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
                   </div>
                   <div class="modal-action justify-center">
-                    <!-- if there is a button in form, it will close the modal -->
                     <button class="btn bg-[#F85559] text-white">Close</button>
                     <button class="btn bg-[#F85559] text-white">Buy Now</button>
                   </div>
@@ -379,7 +359,6 @@
                     <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
                   </div>
                   <div class="modal-action justify-center">
-                    <!-- if there is a button in form, it will close the modal -->
                     <button class="btn bg-[#F85559] text-white">Close</button>
                     <button class="btn bg-[#F85559] text-white">Buy Now</button>
                   </div>
@@ -446,69 +425,6 @@
         </div>
       </div>
     </section>
-    <!-- <section class="w-full lg:max-w-[1440px] gap-1 m-6 sm:m-12">
-      <div class="text-center">
-        <h3 class="text-5xl font-bold text-[#121212] mb-4">Why Choose Us</h3>
-        <p class="text-[16px] text-[#121212]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-      </div>
-      <div class="flex mt-5 gap-5">
-        <div class="image-cont flex flex-col">
-          <div class="flex items-center">
-            <img class="rounded-lg bg-gray-200 p-4" src="./images/fruit 1.svg" alt="">
-            <div class="ml-4">
-              <h3>Integrated Supplier</h3>
-              <hr>
-              <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
-            </div>
-          </div>
-          <div class="flex items-center mt-4">
-            <img class="rounded-lg bg-gray-200 p-4" src="./images/ice-cream 1.svg" alt="">
-            <div class="ml-4">
-              <h3>Sustainable Practice</h3>
-              <hr>
-              <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
-            </div>
-          </div>
-          <div class="flex items-center mt-4">
-            <img class="rounded-lg bg-gray-200 p-4" src="./images/like 1.svg" alt="">
-            <div class="ml-4">
-              <h3>Gift Certificates</h3>
-              <hr>
-              <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
-            </div>
-          </div>
-        </div>
-        <div class="ml-12">
-          <img src="./images/whychoose1.png" alt="Why Choose Us Image">
-        </div>
-        <div class="image-cont flex flex-col">
-          <div class="flex items-center justify-end">
-            <div class="ml-4">
-              <h3>Dedicated Team</h3>
-              <hr>
-              <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
-            </div>
-            <img class="ml-4 rounded-lg bg-gray-200 p-4" src="./images/group 1.svg" alt="Dedicated Team Logo">
-          </div>
-          <div class="flex items-center mt-4 justify-end">
-            <div class="ml-4">
-              <h3>Fresh is Best</h3>
-              <hr>
-              <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
-            </div>
-            <img class="ml-4 rounded-lg bg-gray-200 p-4" src="./images/love 1.svg" alt="">
-          </div>
-          <div class="rounded-md flex items-center mt-4 justify-end gap-3">
-            <div class="ml-4">
-              <h3>Gift Certificates</h3>
-              <hr>
-              <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
-            </div>
-            <img class="ml-4 rounded-lg bg-gray-200 p-4" src="./images/gift-box 1.svg" alt="">
-          </div>
-        </div>
-      </div>
-    </section> -->
     <section class="w-full lg:max-w-[1440px] gap-1 m-6 sm:m-12">
       <div class="text-center">
         <h3 class="text-5xl font-bold text-[#121212] mb-4">Why Choose Us</h3>
@@ -581,9 +497,27 @@
     
   </main>
 
-  <footer>
-
+  <footer class="w-full bg-black flex flex-col items-center p-4 md:p-8">
+    <div class="flex flex-col items-center md:flex-row md:justify-center gap-2 md:gap-4 mt-4">
+        <img src="./images/logo.png" alt="">
+        <h3 class="font-bold text-2xl md:text-4xl text-[#fff]">Fruit Burst</h3>
+    </div>
+    <div class="text-[#fff] flex flex-col md:flex-row gap-4 mt-6 md:mt-12">
+        <h3>Home</h3>
+        <h3>About Us</h3>
+        <h3>All Fruits</h3>
+        <h3>Supports</h3>
+        <h3>Shop Us</h3>
+        <h3>My Account</h3>
+    </div>
+    <div class="social-media flex gap-4 mt-8 md:mt-10">
+        <img src="images/Group 49.svg" alt="">
+        <img src="images/twitter 1.svg" alt="">
+        <img src="images/instagram 1.svg" alt="">
+    </div>
   </footer>
+
+
 
 </body>
 
