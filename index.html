@@ -1,17 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/d8d56fda0e.js" crossorigin="anonymous"></script>
     <title>Fruits Website</title>
 </head>
+
 <body>
     <header>
+        <nav> 
+            <div class="lg:hidden flex justify-between items-center w-full mt-4 px-4">
+              <div class="flex gap-2">
+                <img src="./images/logo.png" alt="">
+                <h3 class="font-bold text-4xl text-[#000] mt-3">Fruit Burst</h3>
+              </div>
+              <div>
+                <button
+                  class="text-[#F85559] focus:outline-none focus:text-[#F85559] focus:bg-gray-700 p-2 rounded-md"
+                  x-on:click="open = !open"
+                  x-bind:aria-expanded="open.toString()"
+                  aria-label="Toggle navigation"
+                >
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+                </div>
+        
+                <!-- Full Desktop Navbar -->
+                <div class="hidden lg:flex justify-center items-center space-x-8 mt-6 px-8" style="max-width: 1440px; margin-top: 40px auto;">
+                <div class="navbar ml-8 bg-[#F85559] rounded-[600px] w-[1440px] flex justify-between items-center space-x-4 p-4">
+                    <div class="font-lato space-x-2 w-auto">
+                        <a class="btn btn-ghost normal-case text-lg text-[#FFF]">Home</a>
+                        <a class="btn btn-ghost normal-case text-lg text-[#FFF]">About Us</a>
+                        <a class="btn btn-ghost normal-case text-lg text-[#FFF]">Shop</a>
+                        <a class="btn btn-ghost normal-case text-lg text-[#FFF]">All Fruits</a>
+                    </div>
+                
+                    <div class="space-x-2 ml-7">
+                        <img src="./images/logo.png" alt="">
+                        <h3 class="font-bold text-[#FFF] text-4xl">Fruit Burst</h3>
+                    </div>
+                    <div class="flex-none flex items-center space-x-2 relative mr-10">
+                        <div class="form-control">
+                            <input type="text" placeholder="Search here" class="input input-bordered w-24 md:w-auto rounded-[50px]" />
+                            <i class="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500"></i>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        
+                <!-- Mobile Navigation Menu (Dropdown) -->
+                <div class="lg:hidden" x-show="open" x-on:click.away="open = false">
+              <div class="px-4 py-2 space-y-4 mt-4">
+                    <a href="#" class="block text-[#000] hover:bg-gray-700 px-3 py-2 rounded-md">Home</a>
+                    <a href="#" class="block text-[#000] hover:bg-gray-700 px-3 py-2 rounded-md">About Us</a>
+                    <a href="#" class="block text-[#000] hover:bg-gray-700 px-3 py-2 rounded-md">Shop</a>
+                    <a href="#" class="block text-[#000] hover:bg-gray-700 px-3 py-2 rounded-md">All Fruits</a>
+                    
+                </div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+        </nav>
+        
 
+        <section>
+            
+        </section>
+          
+        
+          
     </header>
+
+
     <main>
 
     </main>
@@ -19,6 +102,7 @@
     <footer>
 
     </footer>
-    
+
 </body>
+
 </html>
